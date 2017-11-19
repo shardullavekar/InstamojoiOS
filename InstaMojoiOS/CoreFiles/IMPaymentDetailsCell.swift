@@ -1,6 +1,6 @@
 //
 //  IMPaymentDetailsCell.swift
-//  LottieAnimation
+//  InstaMojoiOS
 //
 //  Created by Shubhakeerti on 18/11/17.
 //  Copyright © 2017 Shubhakeerti. All rights reserved.

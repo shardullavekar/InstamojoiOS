@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		7AD5FDEFEE3DB6FD48CC41B1 /* Pods_InstaMojoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E26AD410CB7F23EAD4E9F /* Pods_InstaMojoiOS.framework */; };
 		9EF754251FC152E000BB3D1F /* IMConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7541F1FC152E000BB3D1F /* IMConfiguration.swift */; };
 		9EF754261FC1533900BB3D1F /* IMConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF754211FC152E000BB3D1F /* IMConstants.swift */; };
 		9EF754271FC1533900BB3D1F /* IMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF754221FC152E000BB3D1F /* IMController.swift */; };
@@ -52,7 +51,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF754301FC1542B00BB3D1F /* CoreFoundation.framework in Frameworks */,
-				7AD5FDEFEE3DB6FD48CC41B1 /* Pods_InstaMojoiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +161,7 @@
 					9EF754131FC1527300BB3D1F = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					9EF7542A1FC1538800BB3D1F = {
 						CreatedOnToolsVersion = 9.0;
@@ -387,9 +385,9 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = NUFCK3LP7W;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -399,8 +397,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/InstaMojoiOS/module.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ril.jiomoney.InstaMojoiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdk.InstaMojoiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/InstaMojoiOS/module.modulemap";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -416,9 +415,9 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = NUFCK3LP7W;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -428,8 +427,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/InstaMojoiOS/module.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ril.jiomoney.InstaMojoiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdk.InstaMojoiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/InstaMojoiOS/module.modulemap";
 				SWIFT_VERSION = 3.0;

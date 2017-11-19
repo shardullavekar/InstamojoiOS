@@ -1,6 +1,6 @@
 //
 //  IMController.swift
-//  LottieAnimation
+//  InstaMojoiOS
 //
 //  Created by Shubhakeerti on 17/11/17.
 //  Copyright © 2017 Shubhakeerti. All rights reserved.
