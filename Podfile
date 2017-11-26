@@ -7,6 +7,6 @@ target 'InstaMojoiOS' do
 
   # Pods for InstaMojoiOS
 
-pod 'Instamojo', :git => 'https://github.com/Instamojo/ios-sdk.git', :tag => '1.0.10'
+pod 'Instamojo', :git => 'https://github.com/Instamojo/ios-sdk.git', :tag => '1.0.12'
 
 end

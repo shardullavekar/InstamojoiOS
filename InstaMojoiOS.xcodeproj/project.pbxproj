@@ -27,6 +27,7 @@
 		9EF754281FC1533900BB3D1F /* IMPaymentDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF754231FC152E000BB3D1F /* IMPaymentDetailsCell.swift */; };
 		9EF754291FC1533900BB3D1F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF754241FC152E000BB3D1F /* NetworkManager.swift */; };
 		9EF754301FC1542B00BB3D1F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF7542F1FC1542B00BB3D1F /* CoreFoundation.framework */; };
+		BF9C4C95AA586D2C69F79D81 /* Pods_InstaMojoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E26AD410CB7F23EAD4E9F /* Pods_InstaMojoiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF754301FC1542B00BB3D1F /* CoreFoundation.framework in Frameworks */,
+				BF9C4C95AA586D2C69F79D81 /* Pods_InstaMojoiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
