@@ -45,39 +45,39 @@ public class IMConfiguration: NSObject {
     private func validateInputData() -> (Bool, String) {
         if let orderObjectUW = self.orderObject {
             var returnMessage: String = ""
-            if orderObjectUW.purpose.characters.count <= 0 {
+            if orderObjectUW.purpose.count <= 0 {
                 returnMessage.append("\u{2022}  Purpose cannot be empty.")
             }
             
-            if orderObjectUW.buyer_name.characters.count <= 0 {
-                if returnMessage.characters.count > 0 {
+            if orderObjectUW.buyer_name.count <= 0 {
+                if returnMessage.count > 0 {
                     returnMessage.append("\n")
                 }
                 returnMessage.append("\u{2022}  Buyer name cannot be empty.")
             }
             
-            if orderObjectUW.email.characters.count <= 0 {
-                if returnMessage.characters.count > 0 {
+            if orderObjectUW.email.count <= 0 {
+                if returnMessage.count > 0 {
                     returnMessage.append("\n")
                 }
                 returnMessage.append("\u{2022}  Email Id cannot be empty.")
             } else {
                 if !self.validateEmail(email: orderObjectUW.email) {
-                    if returnMessage.characters.count > 0 {
+                    if returnMessage.count > 0 {
                         returnMessage.append("\n")
                     }
                     returnMessage.append("\u{2022}  Email Id is Invalid.")
                 }
             }
             
-            if orderObjectUW.phone.characters.count <= 0 {
-                if returnMessage.characters.count > 0 {
+            if orderObjectUW.phone.count <= 0 {
+                if returnMessage.count > 0 {
                     returnMessage.append("\n")
                 }
                 returnMessage.append("\u{2022}  Mobile number cannot be empty.")
             } else {
                 if !self.validateMobile(phone: orderObjectUW.phone) {
-                    if returnMessage.characters.count > 0 {
+                    if returnMessage.count > 0 {
                         returnMessage.append("\n")
                     }
                     returnMessage.append("\u{2022}  Mobile number is Invalid.")
@@ -86,19 +86,19 @@ public class IMConfiguration: NSObject {
             
             if let amountIntegerValue = Float(orderObjectUW.amount) {
                 if amountIntegerValue <= 0 {
-                    if returnMessage.characters.count > 0 {
+                    if returnMessage.count > 0 {
                         returnMessage.append("\n")
                     }
                     returnMessage.append("\u{2022}  Amount cannot be '0'")
                 }
             } else {
-                if returnMessage.characters.count > 0 {
+                if returnMessage.count > 0 {
                     returnMessage.append("\n")
                 }
                 returnMessage.append("\u{2022}  Amount is Invalid.")
             }
             
-            if returnMessage.characters.count > 0 {
+            if returnMessage.count > 0 {
                 return (false, returnMessage)
             }
             return (true, returnMessage)
@@ -116,13 +116,13 @@ public class IMConfiguration: NSObject {
     
     private func validateMobile(phone: String) -> Bool {
         let phoneWithoutSpecialCharacters = (phone.components(separatedBy: CharacterSet.decimalDigits.inverted)).joined(separator: "")
-        if phoneWithoutSpecialCharacters.characters.count > 10 {
+        if phoneWithoutSpecialCharacters.count > 10 {
             if phoneWithoutSpecialCharacters.hasPrefix("0") {
                 return true
             } else if phoneWithoutSpecialCharacters.hasPrefix("91") {
                 let index = phoneWithoutSpecialCharacters.index(phoneWithoutSpecialCharacters.startIndex, offsetBy: 2)
                 let phoneWithoutCountryCode = phoneWithoutSpecialCharacters.substring(from: index)
-                if phoneWithoutCountryCode.characters.count != 10 {
+                if phoneWithoutCountryCode.count != 10 {
                     return false
                 } else {
                     return true
@@ -130,7 +130,7 @@ public class IMConfiguration: NSObject {
             } else {
                 return false
             }
-        } else if phoneWithoutSpecialCharacters.characters.count == 10 {
+        } else if phoneWithoutSpecialCharacters.count == 10 {
             return true
         } else {
             return false
