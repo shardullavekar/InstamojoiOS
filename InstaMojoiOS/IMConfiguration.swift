@@ -121,7 +121,7 @@ public class IMConfiguration: NSObject {
                 return true
             } else if phoneWithoutSpecialCharacters.hasPrefix("91") {
                 let index = phoneWithoutSpecialCharacters.index(phoneWithoutSpecialCharacters.startIndex, offsetBy: 2)
-                let phoneWithoutCountryCode = phoneWithoutSpecialCharacters.substring(from: index)
+                let phoneWithoutCountryCode = String(phoneWithoutSpecialCharacters[index...])
                 if phoneWithoutCountryCode.count != 10 {
                     return false
                 } else {
